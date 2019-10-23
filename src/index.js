@@ -5,6 +5,8 @@
 
 // css
 // yarn add style-loader css-loader 
+// img
+// yarn add file-loader -D
 import React from 'react';
 import {render } from 'react-dom'
 import App from './App';

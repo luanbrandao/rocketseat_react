@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css'
+import profile from './assets/curso.png'
 function App (){
-  return <h1>Hello Rock</h1>
+  return <img width="200" src={profile}></img>
 }
 
 export default App;
