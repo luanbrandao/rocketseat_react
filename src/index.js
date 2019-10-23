@@ -2,6 +2,11 @@
 // yarn add react react-dom 
 // yarn add babel-loader -D
 // yarn add webpack-dev-server -D
-const soma = (a,b) => a+ b;
 
-alert(soma(1,4));
+// css
+// yarn add style-loader css-loader 
+import React from 'react';
+import {render } from 'react-dom'
+import App from './App';
+
+render( <App></App> , document.getElementById('app'))
