@@ -1,6 +1,9 @@
 import React , { Component } from 'react'
-
+import TechItem from '../components/TechItem'
 class TechList extends Component {
+
+  static defaultProps ={};
+  static protTypes = {};
 
   state =  {
     newTech: '',
@@ -37,11 +40,13 @@ class TechList extends Component {
       <form onSubmit={this.handleSubmit}>
       <ul>
         { this.state.techs.map( tech => (
-          <li key={tech}>
-          {tech}
-          <button onClick={ () => this.handleDelete(tech)} type="button">Remover</button>
-          </li>
-        )) }
+          <TechItem  key={tech} tech={tech} onDelete={() => this.handleDelete(tech)}/>
+          // <li key={tech}>
+          // {tech}
+          // <button onClick={ () => this.handleDelete(tech)} type="button">Remover</button>
+          // </li>
+          )) }
+          <TechItem tech="Test ok" ></TechItem>
       </ul>
       <input 
       type="text"

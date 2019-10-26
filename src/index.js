@@ -9,6 +9,8 @@
 // yarn add file-loader -D
 // ajuda quando queremos usar state em uma class
 //yarn add @babel/plugin-proposal-class-properties
+
+// yarn add prop-types 
 import React from 'react';
 import {render } from 'react-dom'
 import App from './App';
